@@ -18,7 +18,7 @@ And, if use debugger, `windbg` must be on your `PATH`.
 ## Usage
 
 The following script will compile `test.cpp` into `test.exe` and run
-debugger(`windbg`) with breakpoints `test.cpp:81 `test.cpp:32`.
+debugger(`windbg`) with breakpoints `test.cpp:81` and `test.cpp:32`.
 
 ```batchfile
 set VCBUILD_INPUT=test.cpp
@@ -30,13 +30,13 @@ You can also build as release with/without specified target platform. (default i
 
 ```batchfile
 set VCBUILD_PLATFORM=x86
-vcbuild.bat release
+vcbuild release
 ```
 
-Of course, can automatically run after release build (without debugger) as following:
+Of course, can automatically run after build (without debugger) as following:
 
 ```batchfile
-vcbuild.bat release execute
+vcbuild release execute
 ```
 
 ## License
